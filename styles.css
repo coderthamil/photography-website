@@ -1,0 +1,113 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('bg1.jpg');
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Glassmorphism Header */
+.glassmorphism-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.705);
+    backdrop-filter: blur(10em);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.glassmorphism-header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.glassmorphism-header nav li {
+    margin-right: 20px;
+}
+
+.glassmorphism-header nav a {
+    color: #272020;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+}
+
+/* Gallery Styles */
+.gallery-container {
+    position: relative;
+    width: 80%;
+    margin: 40px auto;
+}
+
+.gallery-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s;
+}
+
+.gallery-container img.active {
+    opacity: 1;
+}
+
+.gallery-container img:not(.active) {
+    opacity: 0;
+}
+
+.gallery-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#previous-button {
+    left: 20px;
+}
+
+#next-button {
+    right: 20px;
+}
+
+/* Other Styles */
+section {
+    padding: 40px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
